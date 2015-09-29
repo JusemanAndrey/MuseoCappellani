@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/black">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/nav_bottom"
+        android:layout_below="@+id/textView4">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp">
+
+            <Button
+                    android:id="@+id/btn_floor_1"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                android:background="@drawable/button_black_r"
+                    android:text="@string/nav_floor0"
+                    android:onClick="btn_floor_1_click"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_ic_map" />
+
+            <Button
+                    android:id="@+id/btn_room_1"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/button_black_r"
+                    android:text="Room 1"
+                    android:onClick="btn_room_1_click"
+                android:layout_below="@+id/btn_floor_1"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                    android:id="@+id/btn_floor_2"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/button_black_r"
+                    android:text="@string/nav_floor1"
+                    android:onClick="btn_floor_2_click"
+                android:layout_below="@+id/btn_room_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:drawableLeft="@drawable/ic_ic_map" />
+
+            <Button
+                    android:id="@+id/btn_room_2"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/button_black_r"
+                    android:text="Room 2"
+                    android:onClick="btn_room_2_click"
+                android:layout_below="@+id/btn_floor_2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                    android:id="@+id/btn_room_3"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/button_black_r"
+                    android:text="Room 3"
+                    android:onClick="btn_room_3_click"
+                android:layout_below="@+id/btn_room_2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                    android:id="@+id/btn_room_4"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/button_black_r"
+                    android:text="Room 4"
+                    android:onClick="btn_room_4_click"
+                android:layout_below="@+id/btn_room_3"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                    android:id="@+id/btn_room_5"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/button_black_r"
+                    android:text="Room 5"
+                    android:onClick="btn_room_5_click"
+                android:layout_below="@+id/btn_room_4"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                    android:id="@+id/btn_room_6"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:background="@drawable/button_black_r"
+                    android:text="Room 6"
+                    android:onClick="btn_room_6_click"
+                android:layout_below="@+id/btn_room_5"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+            android:id="@+id/nav_bottom"
+            style="@style/layoutNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" >
+
+        <Button
+                android:id="@+id/btn_nav_home"
+                style="@style/buttonNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nav_home_desc"
+                android:drawableLeft="@drawable/ic_home_museum"
+                android:onClick="btn_nav_home_click"
+                android:text="@string/nav_home" />
+
+        <Button
+                android:id="@+id/btn_nav_cards"
+                style="@style/buttonNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nav_cards_desc"
+                android:drawableLeft="@drawable/ic_search"
+                android:onClick="btn_nav_cards_click"
+                android:text="@string/nav_cards" />
+
+
+        <Button
+                android:id="@+id/btn_nav_back"
+                style="@style/buttonNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nav_back_desc"
+                android:drawableLeft="@drawable/ic_navigation_back"
+                android:onClick="btn_nav_back_click"
+                android:text="@string/nav_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title1"
+        android:textSize="34sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title2"
+        android:textSize="50sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

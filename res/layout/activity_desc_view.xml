@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:gravity="center_horizontal"
+    tools:context="${packageName}.${activityClass}" >
+
+   <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_cappellani1" />
+
+    <WebView
+        android:id="@+id/webDescView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_bottom"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" />
+    
+     <LinearLayout
+         android:id="@+id/nav_bottom"
+         style="@style/layoutNav"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_nav_home"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:contentDescription="@string/nav_home_desc"
+            android:drawableLeft="@drawable/ic_home_museum"
+            android:onClick="btn_nav_home_click"
+            android:text="@string/nav_home" />
+
+        <Button
+            android:id="@+id/btn_nav_cards"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search"
+            android:contentDescription="@string/nav_cards_desc"
+            android:text="@string/nav_cards" 
+            android:onClick="btn_nav_cards_click" />
+
+        <Button
+            android:id="@+id/btn_nav_info"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_ic_map"
+            android:contentDescription="@string/nav_info_desc"
+            android:text="@string/nav_info" 
+            android:onClick="btn_nav_info_click" />
+
+        <Button
+            android:id="@+id/btn_nav_back"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:contentDescription="@string/nav_back_desc"
+            android:drawableLeft="@drawable/ic_navigation_back"
+            android:text="@string/nav_back" 
+            android:onClick="btn_nav_back_click" />
+
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

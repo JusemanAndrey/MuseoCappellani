@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_cappellani1" />
+
+    <ListView
+        android:id="@+id/cards_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_cardsearch"
+        android:background="#88000000"
+        android:padding="20dp"
+        android:scrollbarStyle="insideOverlay" >
+
+    </ListView>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/nav_cardsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_bottom"
+        android:layout_alignParentBottom="false"
+        android:background="#88FFFFFF"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="14dp"
+                android:text="@string/codice_opera"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/activity_largetext" />
+
+            <EditText
+                android:id="@+id/editCardSearch"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:ems="2"
+                android:inputType="none"
+                android:maxLines="1"
+                android:textSize="34sp" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/btn_cards"
+                    style="@style/buttonBlackKeyboard"
+                    android:onClick="btn_keyb_click"
+                    android:tag="8"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/btn_infoapp"
+                    style="@style/buttonBlackKeyboard"
+                    android:onClick="btn_keyb_click"
+                    android:tag="9"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/btn_judica"
+                    style="@style/buttonBlackKeyboard"
+                    android:onClick="btn_keyb_click"
+                    android:tag="10"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/btn_akrai"
+                    style="@style/buttonBlackKeyboard"
+                    android:onClick="btn_keyb_click"
+                    android:tag="11"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/btn_keyb5"
+                    style="@style/buttonBlackKeyboard"
+                    android:onClick="btn_keyb_click"
+                    android:tag="12"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/btn_keybD"
+                    style="@style/buttonBlackKeyboard"
+                    android:onClick="btn_keyb_click"
+                    android:tag="67"
+                    android:text="Del" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/btn_keyb6"
+                    style="@style/buttonBlackKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btn_keyb_click"
+                    android:tag="13"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/btn_keyb7"
+                    style="@style/buttonBlackKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btn_keyb_click"
+                    android:tag="14"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/btn_keyb8"
+                    style="@style/buttonBlackKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btn_keyb_click"
+                    android:tag="15"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/btn_keyb9"
+                    style="@style/buttonBlackKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btn_keyb_click"
+                    android:tag="16"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/btn_keyb0"
+                    style="@style/buttonBlackKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btn_keyb_click"
+                    android:tag="7"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/btn_keybC"
+                    style="@style/buttonBlackKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="btn_keyb_clear"
+                    android:text="C" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_bottom"
+        style="@style/layoutNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_nav_home"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nav_home_desc"
+            android:drawableLeft="@drawable/ic_home_museum"
+            android:onClick="btn_nav_home_click"
+            android:text="@string/nav_home" />
+
+        <Button
+            android:id="@+id/btn_nav_info"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nav_info_desc"
+            android:drawableLeft="@drawable/ic_ic_map"
+            android:onClick="btn_nav_info_click"
+            android:text="@string/nav_info" />
+
+        <Button
+            android:id="@+id/btn_nav_back"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nav_back_desc"
+            android:drawableLeft="@drawable/ic_navigation_back"
+            android:onClick="btn_nav_back_click"
+            android:text="@string/nav_back" />
+    </LinearLayout>
+
+</RelativeLayout>

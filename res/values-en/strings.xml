@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Judica Museum</string>
+    <string name="action_settings">action_settings</string>
+
+    <string name="main_title1">Archeologic Museum</string>
+    <string name="main_title2">Gabriele Judica</string>
+    <string name="language">language selection</string>
+    <string name="language_sel">Language Selected: ENGLISH</string>
+    <string name="italiano">Italian</string>
+    <string name="inglese">English</string>
+    <string name="francese">French</string>
+    
+    <string name="nav_home">Home</string>
+    <string name="nav_home_desc">Back to the main screen</string>
+    <string name="nav_cards">Operas</string>
+    <string name="nav_cards_desc">Operas Search</string>
+    <string name="nav_info">Rooms</string>
+    <string name="nav_info_desc">Judica Museum Rooms</string>
+    <string name="nav_back">Back</string>
+    <string name="nav_back_desc">Step back</string>
+
+
+    <string name="nav_floor0">Ground Floor</string>
+    <string name="nav_floor1">Frist Floor</string>
+    <string name="nav_room">Room</string>
+    <string name="nav_prev_item">Prev Opera</string>
+    <string name="nav_next_item">Next Opera</string>
+    <string name="piano">Floor</string>
+    <string name="sala">Room</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="main_btn_infomuseo">Museum Information</string>
+    <string name="main_btn_info">Exibitions Map</string>
+    <string name="main_btn_cards">Operas List</string>
+    <string name="main_btn_akrai">Akrai</string>
+    <string name="main_btn_judica">Judica Collection</string>
+    <string name="main_btn_palazzolo">Palazzolo Acreide</string>
+    <string name="main_btn_language">Language Selection</string>
+    <string name="main_btn_infoapp">App Info</string>
+    <string name="main_txt_guide">Multimedia Guide</string>
+    <string name="main_txt_turistic">Turistic Info</string>
+    <string name="main_txt_documentation">Documentation</string>
+    <string name="main_txt_utility">Utility</string>
+    
+    <string name="title_activity_desc_view">DescViewActivity</string>
+    
+    <string name="title_activity_card_list">CardListActivity</string>
+    <string name="codice_opera">Opera Code</string>
+
+</resources>

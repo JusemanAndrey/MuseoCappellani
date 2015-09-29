@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black">
+    <RelativeLayout
+            android:id="@+id/cardViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/box_transp">
+            <TextView
+                    android:id="@+id/cardViewTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/holo_green_dark"
+                android:text="title"
+                android:layout_below="@+id/cardViewCodeText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cardViewCodeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:text="code"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ScrollView
+            android:id="@+id/cardViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/cardViewTitle">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:clickable="false">
+            <ImageView
+                    android:id="@+id/cardViewImage"
+                    android:layout_width="500dp"
+                    android:layout_height="500dp"
+                    android:layout_centerHorizontal="true"/>
+            <TextView
+                    android:id="@+id/cardViewDescr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@id/cardViewImage"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+        android:background="#D3D3D3"
+            android:weightSum="2"
+        android:layout_above="@+id/nav_bottom"
+        android:id="@+id/linearLayout">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            <Button
+                    android:id="@+id/btn_room_click"
+                    style="@style/buttonBlackR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_black_r"
+                    android:text="Room"
+                    android:layout_centerVertical="true"
+                    android:onClick="btn_nav_to_room_click"
+                android:drawableLeft="@drawable/ic_info" />
+         </RelativeLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <Button
+                        android:id="@+id/btn_prev_click"
+                        style="@style/buttonBlackR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/button_black_r"
+                        android:text="@string/nav_prev_item"
+                        android:layout_centerVertical="true"
+                        android:onClick="btn_nav_prev_click"
+                    android:drawableLeft="@drawable/ic_navigation_back" />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <Button
+                        android:id="@+id/btn_next_click"
+                        style="@style/buttonBlackR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/button_black_r"
+                        android:text="@string/nav_next_item"
+                        android:layout_centerVertical="true"
+                        android:onClick="btn_nav_next_click"
+                    android:drawableRight="@drawable/ic_navigation_forw" />
+            </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/nav_bottom"
+            style="@style/layoutNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" >
+
+        <Button
+                android:id="@+id/btn_nav_home"
+                style="@style/buttonNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nav_home_desc"
+                android:drawableLeft="@drawable/ic_home_museum"
+                android:onClick="btn_nav_home_click"
+                android:text="@string/nav_home" />
+
+        <Button
+                android:id="@+id/btn_nav_cards"
+                style="@style/buttonNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nav_cards_desc"
+                android:drawableLeft="@drawable/ic_search"
+                android:onClick="btn_nav_cards_click"
+                android:text="@string/nav_cards" />
+
+        <Button
+                android:id="@+id/btn_nav_info"
+                style="@style/buttonNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nav_info_desc"
+                android:drawableLeft="@drawable/ic_ic_map"
+                android:onClick="btn_nav_info_click"
+                android:text="@string/nav_info" />
+
+        <Button
+                android:id="@+id/btn_nav_back"
+                style="@style/buttonNav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nav_back_desc"
+                android:drawableLeft="@drawable/ic_navigation_back"
+                android:onClick="btn_nav_back_click"
+                android:text="@string/nav_back" />
+    </LinearLayout>
+</RelativeLayout>

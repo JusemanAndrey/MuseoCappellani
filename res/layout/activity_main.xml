@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_cappellani1" />
+
+    <TextView
+        android:id="@+id/textMain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title2"
+        android:textSize="50sp"
+        android:layout_below="@+id/textMain2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textMain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title1"
+        android:textSize="34sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/nav_bottom"
+        android:layout_alignParentLeft="true"
+        android:background="#AA000000"
+        android:padding="20dp"
+        android:layout_below="@+id/textMain1"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:id="@+id/nav_home_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btn_info"
+                style="@style/buttonBlackR"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:onClick="btn_nav_info_click"
+                android:text="@string/main_btn_info"
+                android:background="@drawable/button_black_r"
+                android:drawableLeft="@drawable/ic_ic_map" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/main_txt_guide"
+                android:textSize="@dimen/activity_normaltext" />
+
+            <Button
+                android:id="@+id/btn_cards"
+                style="@style/buttonBlackR"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/main_btn_cards"
+                android:onClick="btn_cardlist_click"
+                android:drawableLeft="@drawable/ic_search" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="@string/main_txt_documentation"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/activity_normaltext" />
+
+            <Button
+                android:id="@+id/btn_judica"
+                style="@style/buttonBlackR"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/main_btn_judica"
+                android:onClick="btn_judica_click"/>
+
+            <Button
+                android:id="@+id/btn_akrai"
+                style="@style/buttonBlackR"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_black_r"
+                android:text="@string/main_btn_akrai"
+                android:onClick="btn_akrai_click"/>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="@string/main_txt_utility"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/activity_normaltext" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btn_language"
+                    style="@style/buttonBlackR"
+                    android:layout_width="230dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_black_r"
+                    android:text="@string/main_btn_language"
+                    android:onClick="btn_language_click" />
+
+                <Button
+                    android:id="@+id/btn_infoapp"
+                    style="@style/buttonBlackR"
+                    android:layout_width="230dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_black_r"
+                    android:enabled="false"
+                    android:text="@string/main_btn_infoapp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/nav_bottom"
+        style="@style/layoutNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_nav_home"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:contentDescription="@string/nav_home_desc"
+            android:drawableLeft="@drawable/ic_home_museum"
+            android:onClick="btn_nav_home_click"
+            android:text="@string/nav_home" />
+
+        <Button
+            android:id="@+id/btn_nav_cards"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search"
+            android:contentDescription="@string/nav_cards_desc"
+            android:text="@string/nav_cards" 
+            android:onClick="btn_nav_cards_click" />
+
+        <Button
+            android:id="@+id/btn_nav_info"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_ic_map"
+            android:contentDescription="@string/nav_info_desc"
+            android:text="@string/nav_info" 
+            android:onClick="btn_nav_info_click" />
+
+        <Button
+            android:id="@+id/btn_nav_back"
+            style="@style/buttonNav"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:contentDescription="@string/nav_back_desc"
+            android:drawableLeft="@drawable/ic_navigation_back"
+            android:text="@string/nav_back" 
+            android:onClick="btn_nav_back_click" />
+
+    </LinearLayout>
+
+</RelativeLayout>

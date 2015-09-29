@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Musée Judica</string>
+    <string name="action_settings">action_settings</string>
+
+    <string name="main_title1">Musée Archéologique</string>
+    <string name="main_title2">Gabriele Judica</string>
+    <string name="language">sélection de la langue</string>
+    <string name="language_sel">Langue sélectionnée: FRANCAIS</string>
+    <string name="italiano">Italien</string>
+    <string name="inglese">Anglais</string>
+    <string name="francese">Francais</string>
+    
+    <string name="nav_home">Accueil</string>
+    <string name="nav_home_desc">Retour à l\'écran principal</string>
+    <string name="nav_cards">Opéras</string>
+    <string name="nav_cards_desc">Opéras Recherche</string>
+    <string name="nav_info">Infos</string>
+    <string name="nav_info_desc">Musée Cappellani Informations</string>
+    <string name="nav_back">Retour</string>
+    <string name="nav_back_desc">Step back</string>
+
+
+    <string name="nav_floor0">Rez de chaussée</string>
+    <string name="nav_floor1">Premier étage</string>
+    <string name="nav_room">Salle</string>
+    <string name="nav_prev_item">Opera Prec</string>
+    <string name="nav_next_item">Opera Suiv</string>
+    <string name="piano">Etage</string>
+    <string name="sala">Salle</string>
+    
+    <string name="title_activity_main">MainActivity</string>
+    <string name="main_btn_infomuseo">Musées Informations</string>
+    <string name="main_btn_info">Expositions Carte</string>
+    <string name="main_btn_cards">Liste des opéras</string>
+    <string name="main_btn_akrai">Akrai</string>
+    <string name="main_btn_judica">Judica Collection</string>
+    <string name="main_btn_palazzolo">Palazzolo Acreide</string>
+    <string name="main_btn_language">Sélection de la langue</string>
+    <string name="main_btn_infoapp">App Infos</string>
+    <string name="main_txt_guide">Guide multimédia</string>
+    <string name="main_txt_turistic">Information touristique</string>
+    <string name="main_txt_documentation">Documentation</string>
+    <string name="main_txt_utility">Utilité</string>
+    
+    <string name="title_activity_desc_view">DescViewActivity</string>
+    
+    <string name="title_activity_card_list">CardListActivity</string>
+    <string name="codice_opera">Entrez le code de l\'Opéra</string>
+
+</resources>
